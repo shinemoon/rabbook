@@ -41,3 +41,6 @@
 
 也欢迎在[微博](http://t.sina.com.cn/claudxiao)上和作者交流，多谢！
 
+
+WebStore地址 https://chrome.google.com/webstore/detail/rabbook-reader/nndomihejeomoigdjeganklacijoolgg?authuser=1
+
