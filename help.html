@@ -1,0 +1,683 @@
+<html>
+<head>
+<title>睿读 | Rabbook</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/help.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="css/welcome.css" />
+<link rel="stylesheet" type="text/css" href="css/topbanner.css" />
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+
+<script src="plugins/jquery.js" type="text/javascript"> </script>
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"> </script>
+<link href="css/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="plugins/prettify.js"></script>
+<script type="text/javascript" src="plugins/lang-css.js"></script>
+<script src="plugins/jquery.mousewheel.min.js"></script>
+<script src="plugins/jquery.mCustomScrollbar.min.js"></script>
+<script type="text/javascript" src="js/help_embeded.js"></script>
+</head>
+<body >
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a href="bookmarks.html" class='brand'>睿读</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li ><a href="options.html" class='config'>扩展设置</a></li>
+              <li class='active'><a href="help.html" class='profile help-panel'>使用帮助</a></li>
+              <li><a href="whatsnew.html" class=''>更新历史</a></li>
+              <li><a href="online.html" class=''>书籍推荐</a></li>
+              <li><a href="http://tieba.baidu.com/rabbook" class='tieba' target='blank'>访问贴吧</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+			<div id='notify'></div>
+        </div>
+      </div>
+	  <span> <img src='images/loader.gif' class='stop loader-span' ></img></span>
+    </div>
+
+
+
+<div class='help-main'>
+<ul class="help-frame index" >
+	<li ><a href="#operation">基本操作</a></li>
+	<li><a href="#reader">阅读页面</a></li>
+	<li><a href="#config">站点配置</a></li>
+	<li><a href="#skins">阅读皮肤</a></li>
+	<li><a href="#skins-customize">定义皮肤</a></li>
+	<li><a href="#import-export">导入导出</a></li>
+	<li><a href="#share-store">分享同步</a></li>
+</ul>
+
+<div class="help-frame">
+<h1 id='operation'>基本操作</h1>
+<div class='help-content'>
+
+<h2>从阅读网站页面开始阅读：</h2><p>打开想读的书籍页面（请确保是在章节的阅读页面，而不是目录或者书籍信息页），等待读入完成后点击Rabbook图标，然后选择'阅读本页'即可。</p>
+
+<p>关于具体支持的站点，请进入扩展配置页面，查看站点配置选项，包括预置站点和自定义站点，用户可以自行添加自定义站点。</p>
+
+<p>如果当前页面被支持，将会直接打开阅读页面，内容将被载入到该页面开始阅读。</p>
+
+<p>如果当前页面不被支持，错误信息将被显示，可能的错误原因包括:
+<ul>
+
+<li>该站点并非预置站点，并且未被加入到自定义的站点当中；</li>
+<li>如果是预置站点，说明该站点可能近期有页面代码变化，导致失效，请反馈问题，等待更新；<li>如果该站点确认已经配置到自定义站点，那么说明当前配置有误，请优先检查自定义配置中的地址匹配，以及导航相关设置（上一页、下一页、目录页）的设置是否正确，或者目标站点是否近期更新导致配置失效;</li>
+</ul>
+
+同时，自动搜索的页面将会打开，试图在线寻找存在的站点配置（基于页面的域名），如果搜索成功，用户可以点击导入，否则，将会提示用户进行手动配置，或者建议前往贴吧求助。
+
+</p>
+
+
+
+<h2>加入书架：</h2><p>打开想读的书籍页面（请确保是在章节的阅读页面，而不是目录或者书籍信息页），等待读入完成后点击Rabbook图标，然后选择'加入书架'即可,此后，可以通过'我的书架'访问和管理书签；</p>
+
+<p class='alert alert-success'>
+如果对于某些站点的标题，是需要通过内容补丁进行后处理的情况，将无法使用这种直接添加书签的方法，建议先点击阅读，在阅读界面进行添加。
+</p>
+
+
+<h2>我的书架操作：</h2>
+
+<p>点击Rabbook图标，选择'我的书架'按钮，进入书签页面，该页面主面板存储的是记录的书签（仅精确到章节页面）。</p>
+<p>请在左侧面板检视阅读的历史信息，以及可以手动扫描所有书签书籍是否有更新章节,<span style='font-weight:bold;' class='label'>粗体</span>代表有更新，<span class='label' style='font-weight:normal;'>普通</span>代表无更新或者无法获取更新信息（由于配置配置不支持或者网络错误）;</p>
+<p>在主面板的书签列表中，点击书名之后可以在右侧面板选择针对该书籍的具体操作：<ul><li>检查更新</li><li>读毕此书</li><li>放弃此书</li></ul></p>
+
+<p>点击书签列表的章节名将直接打开阅读，如果是右键点击章节名，将会打开原始页面；</p>
+
+<p>此外，最近阅读列表的记录是最近利用阅读器阅读过的页面，与是否添加过书籍无关，而且在某些时候忘记保存书签而直接退出的情况下，可直接在这里找到记录。</p>
+
+<p class='alert alert-error'>可以在设置界面设置自动检查书签更新，但是不建议这样做，因为设置之后，每次打开书架页面，都会自动进行扫描和更新记录，可能影响操作感受；此外，由于Chrome对书签操作频率有一定限制，如果自动扫描，在书签数量很多的情况下，可能不知情中，导致超限被禁止书签的操作（这种情况下，请重启Chrome，可以恢复）；</p>
+
+<p class='alert'>
+此外，每次添加书签，都会清除覆盖掉已经存在的同名书籍的书签（以保证仅保存最新阅读进度），如果，不巧正在阅读两本同名的书籍——解决办法暂时欠奉，先停住一本吧。
+</p>
+
+<h2 id="note-bookmark">书签同步</h2>
+<p>
+鉴于Google的同步服务在境内处于不稳定状态，为了避免被动的情况发生，增加操作的确定性，从3.0开始，支持书签手动上传和下载功能（利用金山快盘的服务），使用之前，请先通过云存储设置取得认证。
+</p>
+<p>
+书签下载将会清空替换所有本地书签，请谨慎操作。
+</p>
+
+</div>
+</div>
+
+
+<div class="help-frame">
+<h1 id='reader'>阅读页面</h1>
+<div class='help-content'>
+<p class='alert'>
+同一时刻，只允许存在一个阅读页面，新开页面将会覆盖前一个。
+</p>
+<p>
+阅读时，缺省启用自动预读并且加入下一页的功能，如果希望关闭，请到配置页面的'自动翻页'设置；关闭后，翻页到底，必须手动翻页（点击按钮，或者参考快捷键部分）。
+</p>
+<p>
+强烈建议打开自动翻页，同时，在页面过长之后，可以直接手动点击按钮翻页或者快捷键翻页，此时将会清空原有的历史内容，重新开始加载内容；
+</p>
+<h2>界面介绍：</h2>
+<p>
+阅读界面的主要部分就是正文内容，目前仅支持缺省皮肤，关于更多的皮肤和自定义功能将在后续版本中陆续添加；
+</p>
+
+<p>
+控制面板隐藏在页面的最右侧(有小三角箭头标识处)，需要呼出时，请将鼠标移近，面板将弹出，鼠标向左移开后，面板将自动隐藏。
+
+操作面板上可以控制的部分包括：
+
+<ul>
+<li>字体大小</li>
+<li>皮肤选择</li>
+	<ul>
+	<li>请注意，自定义皮肤必须是在定义完成之后才能选择，否则将会自动跳转到缺省皮肤;</li>
+	</ul>
+<li>自动字体</li>
+	<ul>
+	<li>当打开自动字体时，如果发现是运行在非windows系统下，将会自动将正文字体替换成为宋体系字体，标题替换成为楷体（无视原主题设置），这是基于在大部分非Windows系的OS当中，宋体字体的渲染要更顺眼一些（呃，至少本人如此认为，这方面应当说，<a href="http://jianshu.io/p/JK6ZuD" target=blank>本人受到了「简书」的不小的影响</a>），如果不喜欢请尽管关闭这个选项;</li>
+	</ul>
+<li>原文恢复</li>
+	<ul>
+	<li>当打开原文恢复功能，将会尝试将由于敏感字屏蔽导致的各类奇怪字符进行恢复，该功能借鉴了<a href='http://userscripts.org/scripts/review/165951'>小说阅读脚本</a>中的实现代码，并且非常感谢<a href='http://tieba.baidu.com/home/main?un=1234pwh&fr=pb'>1234pwh</a>的建议和帮助！</li>
+	</ul>
+<li>简繁转换</li>
+	<ul>
+	<li>这部分代码是借用了<a href="https://chrome.google.com/webstore/detail/ldmgbgaoglmaiblpnphffibpbfchjaeg" target=blank>「新同文堂」</a>的chrome扩展的<a href="https://github.com/softcup/New-Tongwentang-for-Chrome">源码</a>，非常感谢！</li>
+	</ul>
+
+<li>
+自动滚动开始暂停，以及滚动速度
+	<ul>
+	<li>滚动样式包括连续滚动和整页定时翻页，可以在设置页面进行"连续滚动模式"选择;</li>
+	<li>自动滚动开始后，页面左下角将显示滚动速度，5~100，最快100，通过调整速度，可以以步进5来增加或者减少；</li>
+	</ul>
+</li>
+<li>
+导航相关控制按钮(顾名思义，无需太多解释。不过都可以通过快捷键操作，请参见后面'快捷键'部分说明)
+	<ul>
+	<li>增加书签</li>
+	<li>上一页</li>
+	<li>目录页</li>
+	<li>下一页</li>
+	</ul>
+</li>
+
+</ul>
+</p>
+
+<h2>触摸模式：</h2>
+<p>
+为了支持日益主流的触摸屏设备，从3.0起，加强了对于触摸控制的支持（触摸模式的打开，请于选项页面中的阅读设置里修改）;
+<ul>
+<li>
+在页面顶部点击：向上翻页;
+</li>
+<li>
+在页面底部点击：向上翻页;
+</li>
+<li>
+在页面中部从左向右滑动：前一章;
+</li>
+<li>
+在页面中部从右向左滑动：后一章;
+</li>
+</ul>
+</p>
+
+<p class='alert alert-info'>从3.0开始，由于自动加载导致的手势拖动的体验不佳，该功能取消，改为上面提到的点击翻页;</p>
+<p class='alert alert-info'>当需要进行选择文本，微博分享等操作时，请长按3秒左右，将会临时进入非触摸模式，可以通过再次长按返回。</p>
+
+<h2>TTS 书籍朗读：</h2>
+<p>
+在阅读页面使用快捷键 <span class='label'>t</span>进行书籍朗读的切换，也可在侧面控制面板点击耳机图标进行切换；
+</p>
+<p>
+当朗读切换打开时，将会滚动到页面顶部，并且从最近打开的一章开头进行朗读，当一章读毕后，会自动翻页继续阅读。
+</p>
+<p class='alert alert-error'>使用前请确认操作系统本身的TTS引擎安装正常，一般情况下中文版的Windows都会缺省安装相应的TTS引擎，但是，不排除简化版系统或者英文版系统本身就不支持TTS引擎或缺乏相应的中文语音包，这种情况下不是扩展的问题，请自查系统。</p>
+<p class='alert alert-error'>(感谢<a href=http://tieba.baidu.com/i/sys/jump?un=zeg922>zeg922</a>的补充说明) TTS 不能用,可以去<a href=http://www.dacidian.net/tts/>http://www.dacidian.net/tts/</a>这里看看。微软TTS语音引擎 (TTS Engines) 5.1版 这个要安装 tts语音引擎修复 这个也要用下 在就是下载语音库。这个你自己选就OK
+</p>
+<p class='alert alert-info'>阅读过程当中如果进行了手动翻页，翻页之后朗读将会被打断停止。</p>
+<p class='alert alert-info'>由于目前没有找到chrome的tts的pause功能，所以，如果阅读过程当中停止了朗读，再次开始则会跳到该章的开头而不是继续阅读。</p>
+
+<h2>快捷键：</h2>
+<p>
+可以在配置页面中选择是缺省控制还是<span style='font-weight:bold;'>'启用Vim风格热键'</span>：
+<ul>
+<li>
+缺省：
+	<ul>
+	<li><span class='label'>空格:</span>向下滚动，当到达底部时，自动翻页；</li>
+	<li><span class='label'>↓:</span>向下滚动；</li>
+	<li><span class='label'>↑:</span>向上滚动；</li>
+	<li><span class='label'>PageDown:</span>向下翻页；</li>
+	<li><span class='label'>PageUp:</span>向上翻页；</li>
+	<li><span class='label'>a:</span>添加书签；</li>
+	<li><span class='label'>s:</span>切换自动滚动；</li>
+	<li><span class='label'>Home:</span>到达顶部；</li>
+	<li><span class='label'>End:</span>到达顶部；</li>
+	<li><span class='label'>回车:</span>返回目录；</li>
+	<li><span class='label'>t:</span>书籍朗读切换；</li>
+	</ul>
+</li>
+<li>
+Vim风格(此时，除导航外的缺省按键依然有效；同时请确认中文输入法没有打开):
+	<ul>
+	<li><span class='label'>j:</span>向下滚动；</li>
+	<li><span class='label'>k:</span>向上滚动；</li>
+	<li><span class='label'>l:</span>向下翻页；</li>
+	<li><span class='label'>h:</span>向上翻页；</li>
+	</ul>
+</li>
+
+</ul>
+</p>
+
+</div>
+</div>
+
+<div class="help-frame">
+<h1 id='config'>站点配置</h1>
+<div class='help-content'>
+<p class='alert alert-success'>
+当扩展发现本地无任何配置存在，或者版本升级时，将会自动前往网站读取推荐站点配置表并且导入，如果当时由于某种原因不成功，请手动再次获取;
+</p>
+<p>
+所有站点配置都可以本地修改，如果使用过程中发现有失效配置或者更好的配置，请不吝提交到网站（投稿或者邮件）
+</p>
+
+<h2>站点配置获取：</h2>
+<p>
+当前的有效站点配置存放在官方网站，分为推荐站点和其他：
+</p>
+<ul>
+<li>
+<a href="http://rabbook.diandian.com/post/2012-11-21/40042160832">推荐站点</a>：相当于一个精选集，一般是根据站点的原创度、影响力、质量和阅读效果来选择一些代表性的配置，用户可以通过配置页面的推荐站点的‘更新配置’按钮一键获取、更新，当前的推荐站点将会自动导入，同时在配置列表中以高亮表示,而一旦用户对推荐站点做了本地修改，该站点高亮消失以作提醒；
+</li>
+<li>
+其他站点：两种获取场景
+<ul>
+<li>
+配置页面站点配置获取子页中，点击‘搜索站点’，然后在提示框中输入站点域名，注意，一定是域名（例如，www.abc.com,则填写abc.com），进行搜索，然后在刷出的结果中选择存在的配置导入；
+</li>
+<li>
+浏览过程中，当点击工具栏‘阅读本页’后，如果本地无该站配置，将会自动试图搜索，并且弹出搜索结果页面，如果有存在的配置，用户可以一键导入;
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>站点自定义：</h2>
+<p>
+一般的定义站点，可能需要如下知识和背景：
+<ul>
+<li>基本的正则表达式的知识；</li>
+<li>基本的CSS（Jquery）Selector知识；</li>
+<li>...或者，什么都不懂，但是有较强的"照猫画虎"模仿能力以及推理分析的逻辑能力；</li>
+</ul>
+</p>
+
+<p>
+自定义站点的内容补丁/标题补丁，可能需要如下知识和背景：
+<ul>
+<li>基本的html概念；</li>
+<li>基本的JavaScript知识；</li>
+<li>基本的Jquery知识；</li>
+<li>基本的CSS（Jquery）Selector知识；</li>
+<li>基本的正则表达式的知识；</li>
+<li>...或者，什么都不懂，但是有较强的"照猫画虎"模仿能力以及推理分析的逻辑能力；</li>
+</ul>
+</p>
+
+<p>
+关于CSS（Jquery）Selector的知识请参阅<a href='http://www.w3school.com.cn/jquery/jquery_ref_selectors.asp'>w3school的教程</a>，并借鉴预置的自定义站点详细配置进行了解。
+</p>
+<p>
+关于正则表达式的入门知识，可以自行搜索学习，初始自定义站点配置同样是很好的参考资料；
+</p>
+
+有问题和讨论，<a href='http://tieba.baidu.com/rabbook'>依然欢迎到贴吧讨论.</a>
+</p>
+
+<p>
+<h3>配置项目</h3>
+<ul>
+<li><span class='config-name label'>站点名称</span>站点的显示名，唯一，不可与已存在站点重复，否则会导致冲突；</li>
+<li><span class='config-name label'>站点地址</span>站点的首页地址，主要用于方便在配置页面点击后直接进入网站；</li>
+<li><span class='config-name label'>站点匹配</span>该站的阅读页面匹配规则，正则表达式，扩展用于和当前页面比较，以确认是否属于已经配置的支持站点；</li>
+<li><span class='config-name label'>正文选择</span>CSS(Jquery) Selector,直接选择阅读页面中的正文内容，完全符合Jquery的内容选取规则,请避免使用",而使用'；</li>
+<li><span class='config-name label'>前页选择</span>CSS(Jquery) Selector,直接选择阅读页面中的上一页导航链接，完全符合Jquery的内容选取规则,请避免使用",而使用'；</li>
+<li><span class='config-name label'>后页选择</span>CSS(Jquery) Selector,直接选择阅读页面中的下一页导航链接，完全符合Jquery的内容选取规则,请避免使用",而使用'；</li>
+<li><span class='config-name label'>目录选择</span>CSS(Jquery) Selector,直接选择阅读页面中的目录导航链接，完全符合Jquery的内容选取规则,请避免使用",而使用'；</li>
+<li><span class='config-name label'>兼容模式</span>是否打开兼容模式，缺省为关，兼容模式下，会有后台页面打开原始书页，并自动刷新，该模式下读入速度会有所下降，但是大大简化配置要求，用户仅需关注原始页面最终显示的元素，而无需关注载入过程如何；</li>
+<li><span class='config-name label'>标题匹配</span>正则表达式,用来对阅读页面的title属性进行解析，利用反向引用找到嵌入其中的书籍名称和章节名称,其中有且只能有两对括号，对应书名和章节名；</li>
+<li><span class='config-name label'>标题位置</span>选择书名是第一个括号划定的内容还是第二个括号；</li>
+
+<li><span class='config-name label'>内容分析补丁</span>:非必填，针对某些对页面内容进行了特殊处理或者保护的页面，需要特别补丁，一般情况下并非必须：
+
+	<ul>
+	<li>解析的原理是，扩展会将书籍页面内容预先读入到一个新建的，名为<code>fakeStub</code>的Div节点当中（可以仅仅将它理解成一个虚拟容器，里头放入了书籍原始页面的所有内容），然后利用上面配置的那些参数，通过CSS Selector把需要的信息提取出来，再显示在阅读页面上；</li>
+	<li>一般情况下，这个过程不需要用户的任何参与和干扰，自行完成；</li>
+	<li>有些时候，原网站的或者把内容放置在另外的资源文件再次读入，或者做了字符的处理（例如全部倒序），或者导航链接是脚本参数设置等等，此时仅仅读出原始页面是不能直接靠selector提取内容的；</li>
+	<li>扩展在读取、设置完<code>fakeStub</code>和开始利用CSS selector对内容进行读取这两个过程之间增加了一个入口和callback，所谓补丁，就是在这过程间执行的自定义代码，它要做到的就是；<ul>
+	
+	<li>
+		充分利用<code>fakeStub</code>当中的信息，顺着原始网站的思路，把那些隐藏的、或者需要修改的内容找出并且整理出来(参见逐浪网配置，就是把原本title中并不含有的书名信息从meta标签中找到,并且利用正则表达式仅仅提取出书名）；
+	</li>
+	<li>
+		 然后，按照前面配置的那些要求，把有用的信息放回到<code>fakeStub</code>被配置的、扩展将要去扫描和提取的位置上去（例如逐浪网，是按照配置的标题匹配的格式，组装成新的标题字段，然后放回到title标签里头去）；
+	</li>
+	<li>
+		补丁完成，对于扩展后续动作来说，会当作它已经按照约定好的配置把一切需要的内容放在了各自的位置，扩展将按照配置读出。
+	</li>
+	<li class='alert alert-info'>
+		由于字符转义等原因，补丁中禁用双引号",在需要的情况下，请都用'来代替，遇到嵌套引号请用类似'\''的方法转义。
+	</li>
+
+	</ul>
+	</li>
+	<li>所以，在这个意义上，用户能够控制和操作的部分其实就等同于原网站实际能看到的部分，任何网站都可以被正确解析，只是取决于需要多复杂的补丁代码，以及设置者的想象力；</li>
+	<li>从3.0开始，增加了<code>fakeStubStr</code>的变量，表示原<code>fakeStub</code>中的所有原始html内容，主要用在部分情况下，用户希望可以在进行jquery操作之前做直接的字符串操作，替换的需求，如果使用该变量，请确保做完操作后，依然要把处理后内容正确append到<code>fakeStub</code>中去；</li>
+	</ul>
+</li>
+<li><span class='config-name label'>更新页匹配</span>非必填，此处不填，站点依然可以使用，只是无法检查更新章节,目前支持两种语法；
+<ul>
+<li>
+	第1种是直接利用目录页面作为更新页面，可以寻找目录页面中的特定元素来作为最新章节(推荐)；
+<ul>
+<li>	语法: "INDEX";</li>
+<li>	本语法是后续版本(2.1.0.134+)加入，对于已经添加的书签，如果修改了配置，利用了这种语法，将会在用户重新添加一次书签后生效;</li>
+
+</ul>
+
+</li>
+<li>
+	第2种利用的是正则表达式的替换语法，必须告知扩展如何从一个阅读页面的地址推算出书籍信息页面的地址；
+<ul>
+<li>	语法: "REPLACE:[阅读页面地址] WITH:[书籍信息页面地址]";</li>
+<li>	充分理解正则表达式，反向匹配和站点的信息页面（通常含有更新章节信息）和阅读页面的地址间的关系;</li>
+<li>	请参考自定义站点的例子，基本涵盖了几种典型的情况和配置;</li>
+</ul>
+</li>
+
+</li>
+
+<li><span class='config-name label'>更新章节匹配</span>非必填，此处不填，站点依然可以使用，只是无法检查更新章节；
+<ul>
+<li>
+	CSS Selector, 当扩展利用上面的配置找到更新信息页面之后，必须利用这个配置找到最新章节信息所在，其原理与基本配置部分的道理相同；
+</li>
+<li>	到此为止找到的就是当前书籍的最新章节的信息（通常是超链接，但是并不必须），而我们需要的只是章节的名称，或者更准确的说是该节点的text()的内容;</li>
+<li>	有些时候，网站处理并不严谨，书籍阅读页面的章节名和更新信息的章节名会出现差别，例如，有一些额外前缀（最新章节、首发、等等），而更新扫描的原理就是严格比较书签章节名和最新章节名是否相等，所以这种情况下，必须用到更新分析补丁;</li>
+
+</ul>
+</li>
+
+
+<li><span class='config-name label'>更新分析补丁</span>非必填，参见前文，如果不存在问题，此处留空；
+<ul>
+<li>解析的原理是，在找到更新信息后，扩展会把这个节点放到一个叫做<code>stub</code>的虚拟Div节点中，可以将其看成一个容器，容纳了我们利用前面的配置定位到的元素的全部内容，而扫描的时候，扩展会把这个<code>stub</code>的html拿出来和当前该书保存的书签进行比较，如果名字相同，认为无更新，否则认为有更新;</li>
+<li>补丁原理和内容分析类似，就是在生成<code>stub</code>和真正拿它的内容比较之前插入一段补丁代码，用户可以自定义这之间发生的处理，原则是：<ul>
+<li>取出<code>stub</code>的内容</li>
+<li>利用正则表达式选出真正的章节名称，并且按照书签的章节名称进行整理和重组</li>
+<li>将新的、真正的章节名填回到<code>stub</code>当中去（逐浪网配置同样是一个很好的例子，在那个补丁里，把原来附在章节名后头的日期数字全部去掉，然后填回到了<code>stub</code>当中）</li>
+<li>从3.0开始，增加了<code>stubStr</code>的变量，表示原<code>stub</code>中的所有原始html内容，主要用在部分情况下，用户希望可以在进行jquery操作之前做直接的字符串操作，替换的需求，如果使用该变量，请确保做完操作后，依然要把处理后内容正确append到<code>stub</code>中去；</li>
+	<li class='alert alert-info'>
+		由于字符转义等原因，补丁中禁用双引号",在需要的情况下，请都用'来代替，遇到嵌套引号请用类似'\''的方法转义。
+	</li>
+
+
+</ul>
+</ul>
+</li>
+
+
+</ul>
+</p>
+<p>
+综上，配置是一个自由而依靠理解和想象的过程，有无限的可能性，但是，在有选择的情况下还是尽量选择简单和方便的网站，而避免去琢磨补丁——爱好者除外。 
+</p>
+
+<p>
+配置过程中遇到的问题，可以到贴吧求助，作者或者其他热心的用户也会尽可能的提供支持。 
+</p>
+
+
+</div>
+</div>
+
+
+<div class="help-frame">
+<h1 id='skins'>阅读皮肤</h1>
+<div class='help-content'>
+<p>
+支持皮肤的选择。
+</p>
+<p>
+如果需要选择自定义皮肤，请选择最后的'自定义皮肤'。然后请到配置的自定义皮肤部分将样式代码写入；
+</p>
+<p>
+想使用网友提交的自定义皮肤样式，可以点击相应的皮肤搜索按键，前往网站挑选。
+</p>
+<p>
+欢迎有心仪的皮肤样式的朋友在网站投稿，择优将可整合到正式版本当中（同时请提供名称、作者名和作者链接，这些信息也将放置在皮肤配置页面）
+</p>
+</div>
+</div>
+
+<div class="help-frame">
+<h1 id='skins-customize'>定义皮肤</h1>
+<div class='help-content'>
+<p>
+请参考缺省皮肤代码进行编辑后，直接填入到编辑框保存即可。
+</p>
+<pre class="prettyprint lang-css linenums ">
+/* 全局设置 */
+*:focus { outline: none; }
+
+html {
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+body {
+	margin:auto;
+	width:100%;
+	font-family:OfficinaSerif,Trebuchet MS,Tahoma,Calibri,Arial,sans-serif;
+	border:solid 1px rgba(0,0,0,0);	
+	background:#fafafa;
+}
+
+/* 阅读部分顶层容器 */
+#wrapper {
+	position:absolute;
+	top:-10px;
+	right:35px;
+	width:100%;
+	min-height:120%;
+	font-size:14px;
+	border-right:2px solid #eee;
+}
+
+/* 网络Ajax读取忙指示 */
+#wrapper.busy {
+	box-shadow:6px 0px 10px rgba(0,200,200,0.20);
+}
+
+
+/* 章节名样式 */
+.chapter-head {
+	font-family:新宋体,宋体,arial;
+	text-align:left;
+	font-size:16px;
+	margin-top:30px;
+	padding-top:20px;
+	margin-bottom:50px;
+	padding-bottom:20px;
+	padding-left:60px;
+	color:#555;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	border-radius:0px;
+	font-weight:bold;
+}
+
+/* 正文样式 */
+.content {
+	font-family:微软雅黑,新宋体,宋体,arial;
+	line-height:1.5;
+	width:90%;
+	max-width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:40px;
+	color:black;
+}
+
+/* 顶部提示信息样式 */
+#notify {
+	font-family:微软雅黑,新宋体,宋体,arial;
+	position:fixed;
+	top:-1px;
+	left:-2%;
+	width:105%;
+	background:rgba(48, 146, 48, 0.81);
+	color:white;
+	text-align:center;
+	box-shadow:0px 5px 5px rgba(0,0,0,0.20);
+	font-size:14px;
+	padding:4px;
+	display:none;
+}
+
+/* 自动翻页速度提示样式 */
+#speednotify {
+	display:none;
+	font-size:11px;
+	position:fixed;
+	bottom:5px;
+	left:10px;
+	width:30px;
+	background:rgba(0,0,0,0.2);
+	text-align:center;
+	color:white;
+	box-shadow:6px 0px 10px rgba(0,0,0,0.20);
+	font-style:italic;
+	border-radius:0px;
+	opacity:0.5;
+}
+
+/* 控制面板呼出按钮样式 */
+#control-panel-stub #icon{
+	position:fixed;
+	top:50%;
+	right:0px;
+	width:12px;
+	height:12px;
+	opacity:0.5;
+}
+#control-panel-stub {
+	box-shadow:-2px 0px 2px rgba(0,0,0,0.10);
+	position:fixed;
+	top:-10px;
+	right:-1px;
+	border-left:5px solid rgba(0,0,0,0.2);
+	width:12px;
+	min-height:120%;
+	background:#fafafa;
+}
+
+
+
+/* 控制面板样式 */
+#control-panel {
+}
+
+
+/* 导航控制样式 */
+.navigation-icon {
+}
+
+#navigation-div{
+}
+
+#navigation-pre {
+}
+#navigation-menu {
+}
+#navigation-next {
+}
+
+
+/* 设置部分样式 */
+#setting-panel{
+}
+
+/* 字体设置部分样式 */
+#font-setting {
+}
+
+.font-icon {
+}
+
+.font-icon#font-inc {
+}
+
+
+
+/* 皮肤设置部分样式 */
+#skin-setting{
+}
+#skin-setting select{
+}
+
+#skin-setting select option{
+}
+
+/* 自动阅读控制部分样式 */
+#play-setting {
+}
+
+.play-icon {
+}
+
+#play-pause {
+}
+#play-ff {
+}
+#play-rew {
+}
+
+</pre>
+</div>
+</div>
+
+<div class="help-frame">
+<h1 id='import-export'>导入导出</h1>
+<div class='help-content'>
+<p>
+在自定义站点的站点详细页面右上角，有'导出'的选项，点击后，对应站点的配置内容被打开，请复制之后进行共享或者备份；
+</p>
+<p>
+点击选项左面板中的'导出全部站点'，将会打开全部自定义站点的配置内容，请复制之后进行共享或者备份；
+</p>
+<p>
+点击选项左面板中的'导入站点配置'，可以将复制来的站点配置粘贴进入后，点击右上角导入（请注意，导入将会覆盖掉已经存在的同名站点，请事先确认，以防丢失信息）；
+</p>
+<p>
+欢迎网站提交自己的配置！同时，请在提交时附上你的昵称和链接，以方便署名。
+</p>
+</div>
+</div>
+
+<div class="help-frame">
+<h1 id='share-store'>分享同步</h1>
+<div class='help-content'>
+<h2>云存储</h1>
+<p>
+Rabbook目前整合支持<a href='http://www.kuaipan.cn'>金山快盘</a>, 在认证连接后，可以支持本地配置内容的上传，下载。目前支持同步的内容包括:
+</p>
+<ul>
+<li>
+所有本地存在的站点配置；
+</li>
+<li>
+自定义皮肤配置;
+</li>
+</ul>
+
+
+<h2>微博</h1>
+<p>
+Rabbook目前整合支持<a href='http://www.weibo.com'>新浪微博</a>, 在认证连接后，在小说阅读页面，划选文字内容之后，点击浮动图标即可进入发微博分享窗口，用户可以选择选择是否添加#RABBOOK#,#书名#标签以及当前页面短链；
+</p>
+</div>
+</div>
+
+<div class="help-frame">
+</div>
+</div>
+
+<div class='navbar navbar-inverse navbar-fixed-bottom middle-info row-fluid'>
+      <div class="navbar-inner">
+      <div class="container">
+	  <a href='http://tieba.baidu.com/rabbook' class='arrowdown'><i class='icon-home'></i> 贴吧地址</a>
+	  <a href='http://weibo.com/claudxiao' class='arrowup'><i class='icon-map-marker '></i> 作者微博</a>
+	  <span class='info-content pull-right'>
+	  赠人玫瑰 手有余香
+	  </span>
+	  </div>
+	  </div>
+</div>
+
+
+
+<a id="scrollUp" href="#top" title="" style="position: fixed; z-index: 2147483647; display: block;"></a>
+</body>
+</html>

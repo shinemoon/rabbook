@@ -1,0 +1,17 @@
+div.top-show-bar {
+	width:102%;
+	position:fixed;
+	left:-1px;
+	top:-1px;
+	background:rgba(0,0,0,0.6);
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	box-shadow:0px 2px 5px rgba(0,255,255,0.20);
+	border:1px solid grey;
+	font-size:12px;
+	text-align:center;
+	color:lightgrey;
+	z-index:999;
+}

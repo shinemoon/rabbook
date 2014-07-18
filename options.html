@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>睿读 | Rabbook</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/options.css" />
+<link rel="stylesheet" type="text/css" href="css/buttons.css" />
+<link rel="stylesheet" type="text/css" href="css/apprise.min.css" />
+
+
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="css/topbanner.css" />
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/welcome.css" />
+
+
+
+<script src="plugins/jquery.js" type="text/javascript"> </script>
+<!--script src="plugins/jquery-1.6.4.min.js" type="text/javascript"> </script-->
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"> </script>
+<script src="plugins/jquery.mousewheel.min.js"></script>
+<script src="plugins/jquery.mCustomScrollbar.min.js"></script>
+<script src="plugins/apprise-1.5.min.js"></script>
+
+
+
+<script src="plugins/jquery.iphone-switch.js" type="text/javascript"> </script>
+<script src="plugins/auth.js" type="text/javascript"> </script>
+<script src="plugins/chrome_ex_oauth.js" type="text/javascript"> </script>
+<script src="plugins/chrome_ex_oauthsimple.js" type="text/javascript"> </script>
+
+
+<script src="js/utils.js" type="text/javascript"> </script>
+<script src="js/options.js" type="text/javascript"> </script>
+<script src="js/filesystem.js" type="text/javascript"> </script>
+<script src="js/options_embeded.js" type="text/javascript"> </script>
+
+</head>
+<body >
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a href="bookmarks.html" class='brand'>睿读</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class='active'><a href="options.html" class='config'>扩展设置</a></li>
+              <li><a href="help.html" class='profile help-panel'>使用帮助</a></li>
+              <li><a href="whatsnew.html" class=''>更新历史</a></li>
+              <li><a href="online.html" class=''>书籍推荐</a></li>
+              <li><a href="http://tieba.baidu.com/rabbook" target='blank' class='tieba'>访问贴吧</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+			<div id='notify'></div>
+        </div>
+      </div>
+	  <span> <img src='images/loader.gif' class='stop loader-span' ></img></span>
+    </div>
+
+
+<div class='row-fluid'>
+<div class='left-panel span2'>
+	<div class='action-line head general' value='general'>
+	通用配置
+	</div>
+	<div class='sub-config-panel general'>
+	<div class='config-menu-item reader' name='reader'>
+	阅读页面配置
+	</div>
+	<div class='config-menu-item bookmark' name='bookmark'>
+	书签页面配置
+	</div>
+	<div class='config-menu-item skin' name='skin'>
+	阅读皮肤设置
+	</div>
+	<div class='config-menu-item skinCustom' name='skinCustom'>
+	自定义皮肤
+	</div>
+
+
+	</div>
+
+	<div class='action-line head sites' value='sites'>
+	站点配置
+	</div>
+	<div class='sub-config-panel sites'>
+	<!--div class='config-menu-item' name='sites'>
+	内置站点配置
+	</div-->
+	<div class='config-menu-item' name='customize'>
+	站点配置列表
+	</div>
+	<div class='config-menu-item' name='get-sites'>
+	站点配置获取
+	</div>
+	<div class='config-menu-item' name='export-all'>
+	导出全部站点
+	</div>
+	<div class='config-menu-item' name='import'>
+	导入站点配置
+	</div>
+	</div>
+
+
+	<div class='action-line head sync' value='sync'>
+	分享同步
+	</div>
+	<div class='sub-config-panel sync'>
+	<div class='config-menu-item' name='sync-status' style="display:none">
+	同步状态
+	</div>
+	<div class='config-menu-item' name='kuaipan' id='synccontrol'>
+	云存储	
+	</div>
+
+	<div class='config-menu-item' name='weibo' id='weiboctrl'>
+	微博分享
+	</div>
+
+
+	<!--div class='config-menu-item' name='obc' id='obcctrl'>
+	在线中心
+	</div-->
+	
+	</div>
+
+
+
+
+</div>
+<div class='middle-panel span9'>
+<div id='main'>
+</div>
+<!--div class='middle-info'>
+Rabbook by shinemoon @2011 V2.0
+</div-->
+</div>
+
+</div>
+
+<div class='navbar navbar-inverse navbar-fixed-bottom middle-info row-fluid'>
+      <div class="navbar-inner">
+      <div class="container">
+	  <a href='#' class='arrowup'><i class='icon-circle-arrow-up '></i> 配置备份</a>
+	  <a href='#' class='arrowdown'><i class='icon-circle-arrow-down'></i> 配置恢复</a>
+	  <span class='info-content pull-right'>
+	  赠人玫瑰 手有余香
+	  </span>
+	  </div>
+	  </div>
+</div>
+
+
+<!--hide parts-->
+
+
+</body>
+</html>

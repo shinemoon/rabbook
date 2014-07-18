@@ -1,0 +1,129 @@
+
+*:focus { outline: none; }
+textarea {
+    resize: none;
+	border:1px solid #eee;
+ 	border-radius: 2px;
+	background:rgba(200,200,200,0.05);
+	box-shadow:0px 1px 1px rgba(0,0,0,0.20);
+	color:black;
+	font-size:14px;
+	font-family:arial;
+	text-shadow:1px 1px rgba(0,0,0,0.1);
+	padding-left:20px;
+	padding-top:10px;
+	line-height:16px;
+}
+
+html {
+	overflow:auto;
+}
+body {
+	font-family:微软雅黑,新宋体,宋体,arial;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:50px;
+	width:90%;
+	height:100%;
+	font-family:OfficinaSerif,Trebuchet MS,Tahoma,Calibri,Arial,sans-serif;
+	border:solid 1px rgba(0,0,0,0);	
+	background:lightgrey;
+}
+.whats-new-block-header {
+	font-family:微软雅黑,OfficinaSerif,Trebuchet MS,Tahoma,Calibri,Arial,sans-serif;
+ 	text-shadow: 2px -2px 1px rgba(255,255,255,0.2);
+	color:#444;
+	font-size:14px;
+	margin-top:30px;
+}
+.whats-new-block-footer {
+	font-family:微软雅黑,OfficinaSerif,Trebuchet MS,Tahoma,Calibri,Arial,sans-serif;
+	font-style:italic;
+ 	text-shadow: 2px -2px 1px rgba(255,255,255,0.2);
+	color:#444;
+	font-size:12px;
+	margin-top:30px;
+	text-align:right;
+	padding-bottom:30px;
+}
+.whats-new-block {
+	margin-top:40px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	width:400px;
+	background:rgba(255,255,255,0.8);
+	border-radius:1px;
+	text-align:center;
+	font-family:微软雅黑,OfficinaSerif,Trebuchet MS,Tahoma,Calibri,Arial,sans-serif;
+	font-size:13px;
+	padding-top:30px;
+	padding-bottom:30px;
+	padding-left:50px;
+	padding-right:50px;
+	box-shadow:0px 5px 18px rgba(0,0,0,0.50);
+	border:1px solid rgba(0,0,0,0.8);
+	letter-spacing:2px;
+ 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	cursor:pointer;
+}
+
+
+.whats-new-block:hover {
+	box-shadow:0px 15px 18px rgba(0,0,0,0.50);
+}
+.whats-new-block.old{
+	background:rgba(200,150,200,0.3);
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+
+/* in details page */
+.whats-new{
+	font-family:微软雅黑,新宋体,宋体,arial;
+	font-size:14px;
+	text-indent:20px;
+	margin-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:30px;
+	width:800px;
+	background:white;
+	border-radius:1px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:20px;
+	padding-top:20px;
+}
+
+.whats-new ul li{
+	line-height:30px;
+	border-bottom:1px dotted #aaa;
+}
+
+.whats-new.latest {
+	font-size:14px;
+	text-indent:20px;
+}
+
+
+.whats-new.latest li.note{
+	color:blue;
+}
+.whats-new.latest li.outofdate{
+	color:grey;
+}
+
+.whats-new.latest li.warning {
+	color:black;
+}
+
+.whats-new.latest li.warning a{
+	TEXT-DECORATION:none;
+	font-weight:bold;
+	color:black;
+	margin-left:5px;
+	margin-right:5px;
+}
+

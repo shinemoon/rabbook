@@ -1,0 +1,158 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>阅读页面</title>
+<script src="plugins/jquery.js" type="text/javascript"> </script>
+<script src="plugins/jquery.aautoscroll.2.4.js" type="text/javascript"> </script>
+<script src="plugins/jquery.client.js" type="text/javascript"> </script>
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"> </script>
+<script src="js/utils.js" type="text/javascript"> </script>
+<script src="js/reader.js" type="text/javascript"> </script>
+<script src="js/reader_embeded.js" type="text/javascript"> </script>
+
+
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" />
+
+
+<link rel="stylesheet" type="text/css" href="css/reader-common.css" />
+<link id='reader-style' rel='stylesheet' type='text/css' href=''/>
+<link id='buttons-style' rel='stylesheet' type='text/css' href='css/buttons.css'/>
+
+
+<style type="text/css" id='inline-style'>
+</style>
+
+
+
+</head>
+<body style='display:none;'>
+<div id="wrapper">
+</div>
+
+<div id='speedpointer'>
+</div>
+<div id='speedpointer-active'>
+</div>
+
+
+<div id="control-panel-stub" class='hidden-phone'>
+<img id='icon' src='images/arrow.png'></img>
+</div>
+<div id="control-panel" class='hidden-phone'>
+
+<div id="setting-panel">
+<div id="font-setting">
+<!--img src='images/font.png' id="font-dec" class='font-icon' title='减小字体'>
+</img-->
+<i class='icon-minus-sign pull-left' id='font-dec'> </i>
+<!--img src='images/font.png' id="font-inc" class='font-icon' title='增加字体'>
+</img-->
+<span class='label label-success'>字体调整</span>
+<i class='icon-plus-sign pull-right' id='font-inc'></i>
+</div>
+
+<div id="auto-font">
+<input type='checkbox'/><span class='label' title='在非Windows下启用宋体'>自动字体</span>
+</div>
+<div id="auto-replace">
+<input type='checkbox'/><span class='label' title='过滤字替换'>原文恢复</span>
+</div>
+
+
+
+<div id="skin-setting">
+<select id="cur-skin">
+</select>
+</div>
+
+<div id="ts-setting">
+  <button class="btn btn-small" id="t2s">简</button>
+  <button class="btn btn-small" id="nont">原始</button>
+  <button class="btn btn-small" id="s2t">繁</button>
+</div>
+
+
+
+<div id='ttscontrol'>
+  <button class="btn" id="play-tts"><i class="icon-headphones"></i></button>
+</div>
+
+
+
+<div id="play-setting">
+<!--img src='images/button-rew.png' id="play-rew" class='play-icon' title='滚屏减缓'>
+</img>
+<img src='images/button-play.png' id="play-pause" class='play-icon' title='自动滚屏开关'>
+</img>
+<img src='images/button-ff.png' id="play-ff" class='play-icon' title='滚屏加速 '>
+</img-->
+  <button class="btn btn-small " id="play-rew"> <i class="icon-backward "></i></button>
+  <button class="btn btn-success " id="play-pause"><i class="icon-play "></i></button>
+  <button class="btn btn-small " id="play-ff"> <i class="icon-forward "></i></button>
+</div>
+
+
+</div>
+
+<div id="navigation-div">
+		<div class='navigation-icon' id='navigation-add'>
+		<span class='bighubbutton btn-add'><span><span class='bighubicon'></span>&nbsp&nbsp 加 书 签 &nbsp&nbsp</span>
+		</div>
+		<div class='navigation-icon' id='navigation-pre'>
+		<span class='bighubbutton btn-pre'><span><span class='bighubicon'></span>&nbsp&nbsp 上 一 页 &nbsp&nbsp</span>
+		</div>
+		<div class='navigation-icon' id='navigation-menu'>
+		<span class='bighubbutton btn-menu'><span><span class='bighubicon'></span>&nbsp&nbsp 目 录 页 &nbsp&nbsp</span>
+		</div>
+		<div class='navigation-icon' id='navigation-next'>
+		<span class='bighubbutton btn-next'><span><span class='bighubicon'></span>&nbsp&nbsp 下 一 页 &nbsp&nbsp</span>
+		</div>
+		<div class='navigation-icon' id='navigation-bbs'>
+		<span class='bighubbutton btn-bbs'><span><span class='bighubicon'></span>&nbsp&nbsp 讨 论 板 &nbsp&nbsp</span>
+		</div>
+
+</div>
+</div>
+<div id='notify'>
+</div>
+
+<div id='speednotify'>
+</div>
+
+<div id='clockshow' >
+	00:00:00
+</div>
+
+
+
+<img id="imgSinaShare" class="img_sina_share" title="分享书摘到新浪微博" src="images/share.png"/>
+
+<div class='sharemask'> </div>
+
+<div id='sharepanel'>
+<textarea id='shareinput'>
+</textarea>
+<div class='sharespan' >
+<span class='sharespan-tag byte-count'>还可以输入 <span style="margin-left:5px;margin-right:5px ;font-weight:bold;color:lightblue;"> 140 </span>字</span>
+<span class='sharespan-tag rabbook-tag'>Rabbook标签 <input type='checkbox' style="margin-top:5px;"/></span>
+<span class='sharespan-tag book-tag'>书名标签 <input type='checkbox' style="margin-top:5px;"/></span>
+<span class='sharespan-tag link-addr'>页面地址 <input type='checkbox' style="margin-top:5px;"/><span><img id='short-link-loader' style="display:none;" src="images/loader.gif"></img></span></span>
+<span class='share label label-success'> 发布 </span>
+</div>
+</div>
+
+
+</body>
+<script src="plugins/tongwen/tongwen_core.js"></script>
+<script src="plugins/tongwen/tongwen_table_s2t.js"></script>
+<script src="plugins/tongwen/tongwen_table_t2s.js"></script>
+<script src="plugins/tongwen/tongwen_table_ps2t.js"></script>
+<script src="plugins/tongwen/tongwen_table_pt2s.js"></script>
+<script src="plugins/tongwen/tongwen_table_ss2t.js"></script>
+<script src="plugins/tongwen/tongwen_table_st2s.js"></script>
+<script src="plugins/tongwen/tongwen_init.js"></script>
+
+
+</html>

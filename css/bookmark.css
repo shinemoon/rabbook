@@ -1,0 +1,68 @@
+.middle-panel {
+	overflow-y:auto;
+	height:85%;
+	padding-right:20px;
+}
+.bookmark, .left-panel {
+	font-family:微软雅黑;
+}
+.bookmark {
+	font-size:90%;
+}
+
+.left-panel table {
+	font-size:12px;
+}
+
+.global-operation {
+	text-align:center;
+}
+
+.scan-all{
+	margin-bottom:20px;
+}
+
+.book-operation {
+	text-align:center;
+	width:100%;
+	margin-bottom:10px;
+}
+.hasupdate {
+	font-weight:bold;
+	color:black;
+}
+.id.hasupdate {
+}
+.id.noupdate {
+	opacity:0.1;
+}
+.novalidupdate {
+}
+.id.novalidupdate {
+	opacity:0.1;
+}
+
+.book-name,.bookmarkTd.name,.bookmarkTd.site,.bookmarkTd.chapter {
+	cursor:pointer;
+}
+.tofav {
+	position: fixed;
+	bottom: 15px;
+	right: 40px;
+	z-index: 9999;
+	cursor:pointer;
+	opacity:0.5;
+}
+
+.tofav:hover{
+	opacity:0.8;
+}
+
+.read-reset {
+	margin-top:3px;
+	cursor:pointer;
+	opacity:0.5;
+}
+.read-reset:hover {
+	opacity:0.8;
+}

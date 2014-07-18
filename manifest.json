@@ -1,0 +1,54 @@
+{
+	"name": "Rabbook Reader",
+	"version": "3.5.4.2",
+	"description": "睿读|Rabbook 网络小说阅读器",
+	"author": "shinemoon",
+	"options_page": "options.html",
+	"background":{
+		"page":"background.html",
+		"persistent":true
+	},
+	"manifest_version": 2,
+	"icons": {
+	"16": "images/icon.png",
+	"48": "images/blank.png",
+	"128": "images/blank.png"
+  	},
+
+	"browser_action": {
+		"default_icon": "images/icon.png",
+		"default_popup":"popup.html"
+    },
+	"sandbox":{
+		"pages":["sandbox.html"]
+	},
+	"minimum_chrome_version": "21",
+ 	"web_accessible_resources": [
+		"chrome_ex_oauth.html",
+		"sandbox.html"
+    	],
+  	"permissions": [
+		"tabs",
+		"bookmarks",
+		"storage",
+  		"unlimitedStorage",
+  		"notifications",
+		"tts",
+		"<all_urls>"
+	],
+  	"web_accessible_resources": [
+	    "images/icon.png"
+	],
+    "content_scripts": [
+      {
+        "matches": ["https://api.weibo.com/oauth2/default.html*"],
+        "js": ["oauth2/oauth2_inject.js"],
+        "run_at": "document_start"
+      },
+	 {
+        "matches": ["http://localhost/book/client/do*"],
+        "js": ["oauth2/oauth2_inject.js"],
+        "run_at": "document_start"
+      }
+    ]
+}

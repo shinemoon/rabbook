@@ -1,0 +1,78 @@
+  /* GItHub- Style */
+  /* button basics */
+  span.bighubbutton {
+    display:inline-block;
+    height:23px;
+    padding:0 0 0 3px;
+    font-size:11px;
+    font-weight:bold;
+    color:#333;
+    text-shadow:1px 1px 0 #fff; 
+    background:url(../images/minibutton_matrix.png) 0 0 no-repeat;
+    white-space:nowrap;
+    border:none;
+    overflow:visible;
+    cursor:pointer;
+    text-decoration:none;
+  }
+  
+  span.bighubbutton>span {
+    display:block;
+    height:23px;
+    padding:0 10px 0 8px;
+    line-height:23px;
+    background:url(../images/minibutton_matrix.png) 100% 0 no-repeat;
+  }
+  
+  span.bighubbutton:hover, span.bighubbutton:focus {
+    color:#fff;
+    text-decoration:none;
+    text-shadow:-1px -1px 0 rgba(0,0,0,0.3);
+    background-position:0 -30px;
+  }
+  span.bighubbutton:hover>span, span.bighubbutton:focus>span {background-position:100% -30px;}
+  
+  span.bighubbutton.mousedown{background-position:0 -60px; }
+  span.bighubbutton.mousedown>span{background-position:100% -60px; }
+  
+  /* with icon */
+  span .bighubicon {
+    float:left;
+    margin-left:-4px;
+    width:18px;
+    height:22px;
+    background:url(../images/minibutton_icons.png) 0 0 no-repeat;
+  }
+
+
+  span.btn-config .bighubicon {background-position:-0px 0;}
+  span.btn-config:hover .bighubicon, span.btn-config:focus .bighubicon {background-position:-0px -25px;}
+
+  span.btn-action .bighubicon {background-position:-20px 0;}
+  span.btn-action:hover .bighubicon, span.btn-action:focus .bighubicon {background-position:-20px -25px;}
+
+  span.btn-add .bighubicon {background-position:-40px 0;}
+  span.btn-add:hover .bighubicon, span.btn-add:focus .bighubicon {background-position:-40px -25px;}
+
+  span.btn-list .bighubicon {background-position:-60px 0;}
+  span.btn-list:hover .bighubicon, span.btn-list:focus .bighubicon {background-position:-60px -25px;}
+
+  span.btn-menu .bighubicon {background-position:-140px 0;}
+  span.btn-menu:hover .bighubicon, span.btn-menu:focus .bighubicon {background-position:-140px -25px;}
+
+  span.btn-pre .bighubicon {background-position:-160px 0;}
+  span.btn-pre:hover .bighubicon, span.btn-pre:focus .bighubicon {background-position:-160px -25px;}
+
+  span.btn-next .bighubicon {background-position:-185px 0;}
+  span.btn-next:hover .bighubicon, span.btn-next:focus .bighubicon {background-position:-185px -25px;}
+
+  span.btn-help .bighubicon {background-position:-80px 0;}
+  span.btn-help:hover .bighubicon, span.btn-help:focus .bighubicon {background-position:-80px -25px;}
+
+  span.btn-bbs .bighubicon {background-position:-0 0;}
+  span.btn-bbs:hover .bighubicon, span.btn-bbs:focus .bighubicon {background-position:-0 -25px;}
+
+
+
+
+

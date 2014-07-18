@@ -1,0 +1,35 @@
+#!/bin/sh
+#Move
+echo "....../ Start to Copy File /......."
+rm -rf ~/release/* ;
+cp -R ~/studio/rabbook/rabbook-pro/* ~/release/ ;
+rm ~/release/tags;
+mv ~/release/rabbook-pro.pem.backup ~/rabbook-pro.pem;
+echo "....../ Copy File Done /......."
+
+#COMPRESS
+
+echo "....../ Start to Compress File /......."
+for x in ~/release/js/*.js ~/release/css/*.css ~/release/plugins/*.js
+do
+	echo "->  "  $x
+	java -jar ~/bin/yuicomp.jar $x -o $x --charset utf-8 
+done
+echo "....../ Compress Done /......."
+
+
+if [ $1 = "zip" ] 
+then
+cd ~/release && zip -r ~/release.zip * && rm -rf ~/release/* && mv ~/release.zip ~/release/
+rm ~/rabbook-pro.pem;
+echo "....../ Generate  Done /......."
+fi
+
+##Pack
+if [ $1 = "crx" ] 
+then
+echo "Start to PACK =====>"
+chromium --pack-extension="/home/claud/release" --pack-extension-key="/home/claud/rabbook-pro.pem"  && rm -rf ~/release/* && mv ~/release.* ~/release && rm ~/rabbook-pro.pem
+rm ~/rabbook-pro.pem;
+echo "PACK DONE!"
+fi

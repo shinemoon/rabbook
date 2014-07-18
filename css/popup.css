@@ -1,0 +1,41 @@
+html {
+	background:rgba(250,250,250,1);
+}
+body {
+	font-family:微软雅黑,新宋体,宋体,arial;
+	margin-top:5px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:0px;
+	background:rgba(250,250,250,1);
+}
+
+table.popupmain {
+	width:100%;
+	padding-bottom:3px;
+}
+
+.popupmain .popTr {
+	text-align:center;
+	width:100%;
+}
+
+.popTd.top {
+	border-bottom:0px solid #aaa;
+	border-top:1px solid #aaa;
+}
+.popTd.bottom {
+	border-bottom:1px solid #aaa;
+	border-top:1px solid #aaa;
+}
+.popTd {
+	font-size:12px;
+	border-bottom:0px solid #aaa;
+	border-top:0px solid #aaa;
+	cursor:pointer;
+	padding-bottom:5px;
+	padding-left:10px;
+	padding-right:10px;
+	letter-spacing:8px;
+}
+

@@ -1,0 +1,20 @@
+.navbar-inverse .navbar-inner {
+  background-color: #1b1b1b;
+  background-image: -moz-linear-gradient(top, #cccccc, #bbbbbb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cccccc), to(#bbbbbb));
+  background-image: -webkit-linear-gradient(top, #cccccc, #bbbbbb);
+  background-image: -o-linear-gradient(top, #cccccc, #bbbbbb);
+  background-image: linear-gradient(to bottom, #cccccc, #bbbbbb);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcccccc', endColorstr='#ffbbbbbb', GradientType=0);
+  border-color: #252525;
+}
+
+.navbar .brand {
+	padding: 10px 30px 10px 0px;
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav>li>a {
+color: rgb(27, 25, 25);
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}

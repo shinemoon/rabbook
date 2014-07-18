@@ -1,0 +1,33 @@
+body {
+	background-image:url('/images/ajax-loader.gif');
+	background-repeat:no-repeat;
+	background-position:center;
+}	
+.recommendtbl {
+}
+
+
+
+.thead td span {
+	font-size:18px;
+	font-weight:bold;
+	font-family:仿宋;
+	color:#666;
+}
+
+.tblre {
+	display:none;
+}
+
+.tblre td {
+	font-size:13px;
+	text-align:center;
+}
+
+.tblre td.tbltitle {
+	text-align:left;
+	font-size:18px;
+	font-weight:bold;
+	font-family:宋体;
+	color:#555;
+}

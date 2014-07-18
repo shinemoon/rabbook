@@ -1,0 +1,393 @@
+*:focus { outline: none; }
+
+textarea {
+    resize: none;
+	border:1px solid #eee;
+ 	border-radius: 0px;
+	background:rgba(200,200,200,0.05);
+	box-shadow:0px 1px 1px rgba(0,0,0,0.20);
+	color:black;
+	font-size:14px;
+	font-family:arial;
+	text-shadow:1px 1px rgba(0,0,0,0.1);
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+	line-height:16px;
+}
+
+html {
+	overflow:hidden;
+}
+
+.left-panel {
+	font-family:微软雅黑,新宋体,宋体,arial;
+	background:-webkit-linear-gradient(rgba(234, 238, 243, 0.2), #EAEEF3), -webkit-linear-gradient(left, #EAEEF3, #EAEEF3 97%, #D3D7DB);
+ 	border-radius: 0px;
+	text-align:center;
+	min-width:200px;
+}
+
+.left-panel .profile-panel {
+	border-top:1px solid lightgrey;
+	border-bottom:1px solid lightgrey;
+	margin-top:20px;
+	margin-left:6px;
+	margin-right:6px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.left-panel .profile {
+	font-size:12px;
+	text-shadow:1px 1px white;
+	color:#555;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.about-panel {
+	text-align:center;
+
+	border-top:1px solid rgba(0,0,0,0.7);
+	border-bottom:1px solid rgba(0,0,0,0.7);
+	border-left:1px solid rgba(0,0,0,0.7);
+	border-right:1px solid rgba(0,0,0,0.7);
+
+	box-shadow:0px 2px 5px rgba(0,0,0,0.50);
+	background:rgba(0,0,0,0.3);
+	color:rgba(0,0,0,0.6);
+	text-shadow:1px 1px rgba(240,240,240,0.5);
+
+}
+.middle-panel {
+	overflow-y:hidden;
+	height:80%;
+}
+
+.middle-panel {
+	font-family:微软雅黑,新宋体,宋体,arial;
+ 	border-radius: 0px;
+	background:#fff;
+	margin-left:15px;
+	padding-left:40px;
+	padding-right:40px;
+}
+
+.action-line{ text-align:center;
+	font-family:微软雅黑,新宋体,宋体,arial;
+	font-size:12px;
+	margin-top:8px;
+	margin-bottom:3px;
+	cursor:pointer;
+}
+.action-line.head{
+	font-family:微软雅黑,arial;
+	color:#333;
+	font-size:14px;
+	letter-spacing:3px;
+	background:white;
+	border-left:1px solid #aaa;
+	border-top:1px solid #aaa;
+	border-bottom:1px solid #aaa;
+	margin-bottom:6px;
+	padding-left:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:left;
+}
+
+.sub-config-panel {
+	display:none;
+}
+.sub-config-panel .config-menu-item {
+	text-align:right;
+	text-shadow:white 0 1px 1px;
+	color:#426DC9;
+	border-top:1px solid transparent;
+	border-bottom:1px solid transparent;
+	font-size:12px;
+	margin-top:3px;
+	letter-spacing:3px;
+	padding-top:3px;
+	padding-bottom:3px;
+	-webkit-padding-end:24px;
+	cursor:pointer;
+}
+
+.sub-config-panel .config-menu-item.valid {
+	background:-webkit-linear-gradient(left, #BBCEE9, #BBCEE9 97%, #AABEDC);
+	-webkit-box-shadow: 0px 1px 0px #f7f7f7;
+	border-top:1px solid #8FAAD9;
+	border-bottom:1px solid #8FAAD9;
+	color:black;
+	text-shadow:#BBCEE9 0 1px 1px;
+}
+
+.cfg_table {
+	font-family:微软雅黑,新宋体,宋体,arial;
+	width:100%;
+}
+
+
+
+
+
+.newitem .cfg_td {
+	border-bottom:1px solid #EEE;
+	text-align:center;
+	letter-spacing:8px;
+	color:grey;
+	font-size:14px;
+	text-shadow:1px 2px #eee;
+	cursor:pointer;
+}
+
+.newitem .cfg_td:hover {
+	text-shadow:1px 2px lightgrey;
+	background:rgba(0,0,0,0.02);
+}
+
+.cfg_td {
+	font-family:微软雅黑,新宋体,宋体,arial;
+	padding-top:10px;
+	border-bottom:1px solid #EEE;
+	padding-bottom:10px;
+}
+
+.cfg_td.noend {
+	border-bottom:0px solid #EEE;
+}
+
+.cfg_td.label-a {
+	font-size:14px;
+	font-weight:bold;
+	width:40%;
+	padding-left:20px;
+	letter-spacing:2px;
+}
+.cfg_td.label-a.skin {
+	width:15%;
+	cursor:pointer;
+}
+.cfg_td.label-a.skin.invalid {
+	color:lightgrey;
+}
+
+.btn.invalid {
+	display:none;
+}
+
+.cfg_td.skin-comment {
+	width:70%;
+	font-size:11px;
+	color:grey;
+	text-align:center;
+}
+
+.cfg_td.skin-author {
+	font-size:12px;
+	color:black;
+	text-align:left;
+	text-shadow:1px 1px lightgrey;
+	font-style:italic;
+	cursor:pointer;
+}
+
+
+
+.cfg_td.label-a.placeholder {
+}
+
+.cfg_td.content {
+	text-align:center;
+	width:60%;
+}
+
+
+.detail_cfg_td {
+	padding-top:10px;
+	border-bottom:1px solid #EEE;
+	padding-bottom:10px;
+}
+
+.detail_cfg_td.noend {
+	border-bottom:0px solid #EEE;
+}
+
+.detail_cfg_td.label-a {
+	font-size:14px;
+	font-weight:normal;
+	width:15%;
+	letter-spacing:2px;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+	text-align:center;
+	text-shadow:1px 1px lightgrey;
+	background:rgba(0,0,0,0.02);
+	cursor:pointer;
+}
+
+.detail_cfg_td.content {
+	text-align:center;
+	width:35%;
+}
+
+.content .iphone_switch_container {
+	padding-left:70%;
+}
+
+#main h1 {
+	font-size:16px;
+	color:#53637D;
+	letter-spacing:3px;
+}
+
+
+#main h1 span.top-control{
+	font-size:12px;
+	cursor:pointer;
+	text-shadow:1px 1px rgba(0,0,0,0.1);
+	margin-right:20px;
+}
+
+#main h1 span.top-control:hover{
+	color:black;
+}
+
+.siteaddress {
+	cursor:pointer;
+}
+.siteaddress.invalid {
+	color:lightgrey;
+}
+span.forum {
+	cursor:pointer;
+}
+
+.statusContent {
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+}
+
+.notify-status {
+	font-weight:bold;
+	font-size:11px;
+}
+
+table.notify-status {
+	width:95%;
+}
+
+.notify-status tr{
+	height:35px;
+}
+.notify-status td.label-a {
+	color:#53637D;
+}
+
+hr {
+size: 0.5px;
+color: #EEE;
+opacity: 0.2;
+}
+
+a.button.full {
+	width:200px;
+}
+
+td.tdbutton {
+	width:20%;
+}
+
+.cfg_td.label-a span{
+	font-weight:normal;
+	font-size:11px;
+}
+
+.cfg_td.online{
+	text-align:left;
+	font-size:10px;
+	color:#bbb;
+	cursor:pointer;
+}
+
+
+div.cfg_list_notify {
+	width: 95%;
+	text-align: center;
+	font-size: 12px;
+	margin-top: 30px;
+	margin-left:auto;
+	margin-right:auto;
+	background: rgba(0, 200, 0, 0.05);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.cfg_list_table {
+	font-family:微软雅黑,新宋体,宋体,arial;
+	width:98%;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.cfg_list_tr.odd .cfg_list_td{
+	background:rgba(0,0,0,0.02);
+}
+.cfg_list_tr.even .cfg_list_td{
+	background:rgba(0,0,0,0.05);
+}
+
+.cfg_list_td {
+	height:30px;
+}
+.cfg_list_td.content {
+	text-align:right;
+}
+.cfg_list_td.content .button{
+	margin-right:10px;
+}
+.cfg_list_td.label-a {
+	font-size:12px;
+	font-weight:normal;
+	width:30%;
+	padding-left:20px;
+	letter-spacing:2px;
+}
+.cfg_list_td.label-a span{
+	font-weight:normal;
+	font-size:11px;
+}
+
+
+
+
+.whats-new-block-header {
+	font-family:微软雅黑,OfficinaSerif,Trebuchet MS,Tahoma,Calibri,Arial,sans-serif;
+ 	text-shadow: 2px -2px 1px rgba(255,255,255,0.2);
+	color:#444;
+	font-size:14px;
+	margin-top:30px;
+}
+
+.info-content {
+	color:rgb(46, 44, 44);
+	font-size:11px;
+	text-decoration:none;
+	letter-spacing:2px;
+	font-family:微软雅黑;
+
+}
+
+.middle-panel input {
+	height:28px!important;
+	font-family:微软雅黑;
+}
+
+.label-a {
+	font-weight:bold;
+	font-size:14px;
+}
+
