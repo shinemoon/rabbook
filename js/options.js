@@ -531,18 +531,18 @@ function fillDetailPage (info){
 		$('.cfg_tr:last').append('<td class=" label-a">兼容模式</td><td class=" content"><ul class="inline"><li><input type="radio" name="post" value="0" ><span class="label" style="font-size:11px">OFF</span></li><li><input type="radio" name="post" value="1" ><span class="label label-success" style="font-fize:11px">ON</span></li></ul></td></tr></table></td>');
 
 		$('.cfg_table:first').append('<tr class="cfg_tr"></tr>');
-		$('.cfg_tr:last').append('<td class=" label-a">标题匹配</td><td class=" content"><input type="text" name="title_reg" value="'+info.title_reg+'"></input></td>');
+		$('.cfg_tr:last').append('<td class=" label-a">标题匹配</td><td class=" content"><input type="text" name="title_reg" style="font-family:宋体;" value="'+info.title_reg+'"></input></td>');
 		$('.cfg_tr:last').append('<td class=" label-a">标题位置</td><td class=" content"><ul class="inline"><li><input type="radio" name="title_location" value="0" ><span class="label">1</span></li><li><input type="radio" name="title_location" value="1" ><span class="label">2</span></li></ul></td></tr></table></td>');
 
 		$('.cfg_table:first').after('<table cellspacing=0 class="cfg_table table table-striped"></table>');
 		$('.cfg_table:last').append('<tr class="cfg_tr"></tr>');
 		$('.cfg_tr:last').append('<td class=" label-a placeholder" colspan=4>内容分析补丁*</td>');
 		$('.cfg_table:last').append('<tr class="cfg_tr"></tr>');
-		$('.cfg_tr:last').append('<td class=" content high" colspan=4><textarea id="content_patch" style="width:98%;height:100px;"></textarea></td>');
+		$('.cfg_tr:last').append('<td class=" content high" colspan=4><textarea id="content_patch" style="font-family:宋体;width:98%;height:100px;"></textarea></td>');
 		$('.cfg_table:last').append('<tr class="cfg_tr"></tr>');
 		$('.cfg_tr:last').append('<td class=" label-a placeholder" colspan=4>更新分析补丁*</td>');
 		$('.cfg_table:last').append('<tr class="cfg_tr"></tr>');
-		$('.cfg_tr:last').append('<td class=" content high" colspan=4><textarea id="update_patch" style="width:98%;height:100px;"></textarea></td>');
+		$('.cfg_tr:last').append('<td class=" content high" colspan=4><textarea id="update_patch" style="font-family:宋体;width:98%;height:100px;"></textarea></td>');
 
 
 		$('.cfg_table:last').after('<table cellspacing=0 class="cfg_table table table-striped"></table>');
