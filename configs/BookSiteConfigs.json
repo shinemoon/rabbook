@@ -85,20 +85,14 @@
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?) (.*)",
     "title_location": "0",
-    "content_patch": "fakeStub.find('title').html(fakeStub.find('.bm').find('a:last').find('h1').html());fakeStub.find('.bm').find('a').remove();fakeStub.find('title').html(fakeStub.find('title').html() + fakeStub.find('div.bm').text().replace(/>/gm,
-    ''));
-fakeStub.find('.read-content').find('h1').remove();
-fakeStub.find('.read-content').find('span:empty').remove();
-fakeStub.find('.read-content').find('p').remove();
-fakeStub.find('.read-content').find('span').append('<p></p>');
-",
-"update_patch": "",
-"enable": "false",
-"updateInfoPage": "",
-"updateDiv": "",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('title').html(fakeStub.find('.bm').find('a:last').find('h1').html());fakeStub.find('.bm').find('a').remove();fakeStub.find('title').html(fakeStub.find('title').html() + fakeStub.find('div.bm').text().replace(/>/gm,''));fakeStub.find('.read-content').find('h1,span:empty,p').remove();fakeStub.find('.read-content').find('span').append('<br>');",
+	"update_patch": "",
+	"enable": "false",
+	"updateInfoPage": "",
+	"updateDiv": "",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 6,
     "name": "派小说",
@@ -110,16 +104,14 @@ fakeStub.find('.read-content').find('span').append('<p></p>');
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(\\S+) (.*)",
     "title_location": "0",
-    "content_patch": "fakeStub.find('title').html(fakeStub.find('.book_middle_title').find('a:eq(1)').html() + ' ' + fakeStub.find('dl').find('dt').html());fakeStub.find('#booktext').html(fakeStub.find('#booktext').html().replace('【尊敬的书迷们！派--小--说paitxt.com将为您带来更多的那种始料不及的触及心灵的震撼书籍，请注意休息！】',
-    ''));
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": ".book_article_texttable a:last",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('title').html(fakeStub.find('.book_middle_title').find('a:eq(1)').html() + ' ' + fakeStub.find('dl').find('dt').html());fakeStub.find('#booktext').html(fakeStub.find('#booktext').html().replace(/【尊敬的书迷们.*?】/g,''));",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": ".book_article_texttable a:last",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 7,
     "name": "人人小说",
@@ -131,7 +123,7 @@ fakeStub.find('.read-content').find('span').append('<p></p>');
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?)_(.*)_.*",
     "title_location": "0",
-    "content_patch": "fakeStub.find('#booktext').find('p').remove();fakeStub.find('#booktext').find('font').remove();fakeStub.find('div.bottem').find('a:eq(2)').html('回目录');",
+    "content_patch": "fakeStub.find('#booktext').find('p,font').remove();fakeStub.find('div.bottem').find('a:eq(2)').html('回目录');",
     "update_patch": "",
     "enable": "true",
     "updateInfoPage": "INDEX",
@@ -226,16 +218,14 @@ fakeStub.find('.read-content').find('span').append('<p></p>');
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?)_(.*?)_.*",
     "title_location": "0",
-    "content_patch": "fakeStub.find('#content').html(fakeStub.find('#content').html().replace('www.lingdiankanshu.com',
-    ''));
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": "#info > p:nth-child(4) > a",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('#content').html(fakeStub.find('#content').html().replace('www.lingdiankanshu.com',''));",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": "#info > p:nth-child(4) > a",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 13,
     "name": "新笔趣阁",
@@ -247,17 +237,14 @@ fakeStub.find('.read-content').find('span').append('<p></p>');
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?)_(.*?)_.*",
     "title_location": "0",
-    "content_patch": "fakeStub.find('title').html(fakeStub.find('title').text().replace('最新单章在线阅读',
-    ''));
-fakeStub.find('#content > a').remove();
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": "#info a:last",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('title').html(fakeStub.find('title').text().replace('最新单章在线阅读',''));fakeStub.find('#content > a').remove();",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": "#info a:last",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 14,
     "name": "飘天文学",
@@ -269,21 +256,14 @@ fakeStub.find('#content > a').remove();
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?) (.*)",
     "title_location": "0",
-    "content_patch": "fakeStub.find('title').html(fakeStub.find('h1').text().replace(' 正文',
-    ''));
-fakeStub.find('#content').find('h1').remove();
-fakeStub.find('#content').find('div').remove();
-fakeStub.find('#content').find('table').remove();
-fakeStub.find('#content').html(fakeStub.find('#content').html().replace(/\\(未完待续。\\).*/,
-    ''));
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": ".centent a:last",
-"type": "customize",
-"post": "1",
-"patch": ""
+    "content_patch": "fakeStub.find('title').html(fakeStub.find('h1').text().replace(' 正文',''));fakeStub.find('#content').find('h1,div,table').remove();fakeStub.find('#content').html(fakeStub.find('#content').html().replace(/\\(未完待续。\\).*/,''));",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": ".centent a:last",
+	"type": "customize",
+	"post": "1",
+	"patch": ""
 }, {
     "id": 15,
     "name": "思路客小说阅读网",
@@ -314,19 +294,14 @@ fakeStub.find('#content').html(fakeStub.find('#content').html().replace(/\\(未�
     "navigation_selector_next": "a:contains('下一页')",
     "title_reg": "(.*?)-(.*)-.*",
     "title_location": "0",
-    "content_patch": "fakeStub.find('#wrap > div > p:nth-child(1) > a:nth-child(2)').text('回目录');fakeStub.find('#clickeye_content').html(fakeStub.find('#clickeye_content').html().replace(/大文学 www.dawenxue.org/g,
-    '').replace('\\(\\)',
-'').replace('亦凡图书馆扫校',
-''));
-fakeStub.find('#clickeye_content').find('p').remove();
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": ".table_01 a:last",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('#wrap > div > p:nth-child(1) > a:nth-child(2)').text('回目录');fakeStub.find('#clickeye_content').html(fakeStub.find('#clickeye_content').html().replace(/大文学 www.dawenxue.org/g,'').replace('\\(\\)','').replace('亦凡图书馆扫校',''));fakeStub.find('#clickeye_content').find('p').remove();",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": ".table_01 a:last",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 17,
     "name": "17k小说网",
@@ -338,16 +313,14 @@ fakeStub.find('#clickeye_content').find('p').remove();
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?)-(.*?)-.*",
     "title_location": "0",
-    "content_patch": "fakeStub.find('.qrcode').remove();fakeStub.find('#chapterContentWapper').html(fakeStub.find('#chapterContentWapper').html().replace('本书首发来自17K小说网，第一时间看正版内容！',
-    ''));
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": ".Volume a:last",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('.qrcode').remove();fakeStub.find('#chapterContentWapper').html(fakeStub.find('#chapterContentWapper').html().replace('本书首发来自17K小说网，第一时间看正版内容！',''));",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": ".Volume a:last",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 18,
     "name": "小说阅读网",
@@ -378,18 +351,14 @@ fakeStub.find('#clickeye_content').find('p').remove();
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*) (.*?) - 请看小说网",
     "title_location": "1",
-    "content_patch": "fakeStub.find('a:contains(\\\"下一章\\\")').attr('href',
-    fakeStub.find('a:contains(\\\"下一节\\\")').attr('href'));
-fakeStub.find('#content').find('div').remove();
-fakeStub.find('#content').find('a').remove();
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": ".zjbox a:last",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('a:contains(\\\"下一章\\\")').attr('href',fakeStub.find('a:contains(\\\"下一节\\\")').attr('href'));fakeStub.find('#content').find('div').remove();fakeStub.find('#content').find('a').remove();",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": ".zjbox a:last",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 20,
     "name": "UU看书",
@@ -401,16 +370,14 @@ fakeStub.find('#content').find('a').remove();
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?)-(.*)",
     "title_location": "0",
-    "content_patch": "fakeStub.find('title').html(fakeStub.find('.shuming a:first').text() + '-' + fakeStub.find('h1').text());fakeStub.find('#contentbox').find('div').remove();fakeStub.find('#contentbox').html(fakeStub.find('#contentbox').html().replace(/[‘](.)[’]/,
-    '$1'));
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": "dl a:first",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('title').html(fakeStub.find('.shuming a:first').text() + '-' + fakeStub.find('h1').text());fakeStub.find('#contentbox').find('div').remove();fakeStub.find('#contentbox').html(fakeStub.find('#contentbox').html().replace(/[‘](.)[’]/,'$1'));",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": "dl a:first",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 21,
     "name": "uu小说",
@@ -422,16 +389,14 @@ fakeStub.find('#content').find('a').remove();
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?)_(.*?)_.*",
     "title_location": "1",
-    "content_patch": "fakeStub.find('#BookText').html(fakeStub.find('#BookText').html().replace(/\\‘(.)\\’/g,
-    '$1'));
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": ".stats a:first",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('#BookText').html(fakeStub.find('#BookText').html().replace(/\\‘(.)\\’/g,'$1'));",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": ".stats a:first",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 22,
     "name": "去读读",
@@ -443,16 +408,14 @@ fakeStub.find('#content').find('a').remove();
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?)-(.*?)-.*",
     "title_location": "1",
-    "content_patch": "fakeStub.find('title').html(fakeStub.find('title').html().replace('正文',
-    ''));
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": "#kui-book-info a:last",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('title').html(fakeStub.find('title').html().replace('正文',''));",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": "#kui-book-info a:last",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 23,
     "name": "大书包",
@@ -464,16 +427,14 @@ fakeStub.find('#content').find('a').remove();
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?)_(.*?)_.*",
     "title_location": "1",
-    "content_patch": "fakeStub.find('.yd_text2').html(fakeStub.find('.yd_text2').html().replace(/如果您发现章节内容错误.*/,
-    ''));
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": "section.ml_main a:last",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('.yd_text2').html(fakeStub.find('.yd_text2').html().replace(/如果您发现章节内容错误.*/,''));",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": "section.ml_main a:last",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 24,
     "name": "笔趣库",
@@ -485,23 +446,14 @@ fakeStub.find('#content').find('a').remove();
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?)_(.*?)_.*",
     "title_location": "1",
-    "content_patch": "fakeStub.find('#content').html(fakeStub.find('#content').html().replace(/天翼网.*?<br>/,
-    '').replace(/\\[笔趣库.*/,
-'').replace('lala （\\”， Ｗ',
-'').replace(/jie.*看书神器.*?\\”/,
-'').replace('==“/”“ ”或者“”， 。/',
-'').replace('“ ”或者“”， 。/',
-'').replace('（”， Ｗ,, , ,
-',
-''));
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": "#info a:last",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('#content').html(fakeStub.find('#content').html().replace(/天翼网.*?<br>/,'').replace(/\\[笔趣库.*/,'').replace('lala （\\”， Ｗ','').replace(/jie.*看书神器.*?\\”/,'').replace('==“/”“ ”或者“”， 。/','').replace('“ ”或者“”， 。/','').replace('（”， Ｗ,, , ,',''));",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": "#info a:last",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 25,
     "name": "神马小说",
@@ -513,19 +465,14 @@ fakeStub.find('#content').find('a').remove();
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?)-(.*?)-.*",
     "title_location": "1",
-    "content_patch": "fakeStub.find('title').html(fakeStub.find('title').html().replace('(TXT全文字手打)',
-    ''));
-fakeStub.find('#htmlContent div').remove();
-fakeStub.find('#htmlContent').html(fakeStub.find('#htmlContent').html().replace(/更多手打.*/,
-    ''));
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": "div.zjlist4 a:last",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('title').html(fakeStub.find('title').html().replace('(TXT全文字手打)',''));fakeStub.find('#htmlContent div').remove();fakeStub.find('#htmlContent').html(fakeStub.find('#htmlContent').html().replace(/更多手打.*/,''));",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": "div.zjlist4 a:last",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 26,
     "name": "乐文小说",
@@ -537,41 +484,31 @@ fakeStub.find('#htmlContent').html(fakeStub.find('#htmlContent').html().replace(
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?)-(.*)",
     "title_location": "0",
-    "content_patch": "fakeStub.find('title').html(fakeStub.find('.bread-crumbs a:last').html() + '-' + fakeStub.find('h1').html());fakeStub.find('#content').html(fakeStub.find('#content').html().replace(/<div.*?div>/g,
-    '').replace(/<a.*?a>/g,
-'').replace(/<br><br>/g,
-'<br>'));
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": ".chapterlist a:last",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('title').html(fakeStub.find('.bread-crumbs a:last').html() + '-' + fakeStub.find('h1').html());fakeStub.find('#content').html(fakeStub.find('#content').html().replace(/<div.*?div>/g,'').replace(/<a.*?a>/g,'').replace(/<br><br>/g,'<br>'));",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": ".chapterlist a:last",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }, {
     "id": 27,
-    "name": "123言情",
-    "address": "http://www.123yq.org",
-    "url_reg": "^http://www.123yq.org/read/\\d+/\\d+/\\d+.shtml$",
+    "name": "33言情",
+    "address": "http://www.33yq.com",
+    "url_reg": "^http://www.33yq.com/read/\\d+/\\d+/\\d+.shtml$",
     "content_selector": "#TXT",
     "navigation_selector": "a:contains('章节目录')",
     "navigation_selector_pre": "a:contains('上一章')",
     "navigation_selector_next": "a:contains('下一章')",
     "title_reg": "(.*?)-(.*)",
     "title_location": "0",
-    "content_patch": "fakeStub.find('title').html(fakeStub.find('.con_top a:last').text() + '-' + fakeStub.find('.con_top').text().replace(/.*>/g,
-    ''));
-fakeStub.find('#TXT').html(fakeStub.find('#TXT').html().replace(/<div.*?div>/g,
-'').replace(/<a.*?a>/g,
-'').replace(/<br><br>/g,
-'<br>'));
-",
-"update_patch": "",
-"enable": "true",
-"updateInfoPage": "INDEX",
-"updateDiv": "#info a:last",
-"type": "customize",
-"post": "0",
-"patch": ""
+    "content_patch": "fakeStub.find('title').html(fakeStub.find('.con_top a:last').text() + '-' + fakeStub.find('.con_top').text().replace(/.*>/g,''));fakeStub.find('#TXT').find('div,a,br:odd').remove();",
+	"update_patch": "",
+	"enable": "true",
+	"updateInfoPage": "INDEX",
+	"updateDiv": "#info a:last",
+	"type": "customize",
+	"post": "0",
+	"patch": ""
 }]
